@@ -11,15 +11,15 @@ export default {
 	footerText: `MIT ${new Date().getFullYear()} © Dapper Fox Group LLC`,
 	logo: (
 		<>
-			<svg>...</svg>
-			<span>Next.js Static Site Generator</span>
+			<img src="/public/icon.svg" alt="logo" />
+			<span>Kinetic Doc</span>
 		</>
 	),
 	head: (
 		<>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<meta name="description" content="Nextra: the next docs builder" />
-			<meta name="og:title" content="Nextra: the next docs builder" />
+			<meta name="description" content="Kinetic Hosting - Documentation" />
+			<meta name="og:title" content="Kinetic Hosting - Documentation" />
 		</>
 	),
 }
