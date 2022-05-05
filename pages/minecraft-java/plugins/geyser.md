@@ -23,5 +23,5 @@ Alright, now we have the plugins installed, we now need to open the port. If you
 
 If you own a dedicated IP, you can head to the Network & Port tab, and open the port: 19132
 
-Bedrock players can now join from {yourIP}:19132
+Bedrock players can now join from yourIP:19132
 (Note, if you don’t have a dedicated IP, your port might be different. A support agent will tell you the port on setup)
