@@ -15,10 +15,10 @@ If you’re running the wrong version, your server will not load. Our panel shou
 
 
 This box will allow you to select the correct version of Java
-![java image](/java-image.png)
+![java image](../../../public/java-box.png)
 ## Compatabillty Mode
 You might spot the compatibility option in the drop-down
-![java image](/java-image-compat.png)
+![java image](../../../public/java-box-compat.png)
 
 
 Post Java 11, we’ve opted to use a more optimised version of Java on all our systems. This should work with most Minecraft jars, however, there might be a few this causes crash issues with. If this is the case, then you can select the compatibility option from the drop-down
