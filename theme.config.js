@@ -11,9 +11,12 @@ export default {
 	footerText: `MIT ${new Date().getFullYear()} © Dapper Fox Group LLC`,
 	logo: (
 		<>
-			<img src="/public/icon.svg" alt="logo" />
-			<span>Kinetic Doc</span>
+			<div>
+				<img width="40" height="40" src="/icon.svg" alt="logo" />
+			</div>
+
 		</>
+
 	),
 	head: (
 		<>
