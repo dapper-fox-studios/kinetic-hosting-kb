@@ -7,6 +7,7 @@ export default {
 	prevLinks: true,
 	search: true,
 	darkMode: true,
+	defaultMenuCollapsed: true,
 	footer: true,
 	footerText: `MIT ${new Date().getFullYear()} © Dapper Fox Group LLC`,
 	logo: (
@@ -23,7 +24,20 @@ export default {
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="description" content="Kinetic Hosting - Documentation" />
 			<meta name="og:title" content="Kinetic Hosting - Documentation" />
+
+			<script
+				lang="javascript"
+				dangerouslySetInnerHTML={{
+					__html: `if (!window.localStorage.getItem("theme_default")) {
+      				window.localStorage.setItem("theme", "dark");
+      				window.localStorage.setItem("theme_default", "dark");
+      				document.documentElement.classList.add("dark");
+      				document.documentElement.classList.remove("light");
+    				}`,
+				}}
+			/>;
 		</>
 	),
+
 }
 
