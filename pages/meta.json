@@ -1,5 +1,9 @@
 {
 	"index": "Welcome",
 	"started": "☰ Using The Panel  🢓",
-	"minecraft-java": "☰ Minecraft (Java)  🢓"
+	"minecraft-java": "☰ Minecraft (Java)  🢓",
+	"minecraft-bedrock": "☰ Minecraft (Bedrock)  🢓",
+	"game-servers": "☰ Game Servers  🢓",
+	"billing": "☰ Billing  🢓",
+	"vps": "☰ VPS  🢓"
 }
