@@ -1,0 +1,73 @@
+# Setting Up A Firewall
+
+To set up a firewall on your server, we’re going to be using UFW. This is the most simple way to manage a firewall on linux. Is this we’ll mostly be covering the steps you need to lock down a game or Minecraft server. If you want a more in-depth guide, then we recommend checking out this page: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-18-04
+
+UFW should come installed with your linux install.
+
+First, we’re going to bring up the app list. For this you can run the following command:
+
+```mdx
+ufw app list
+```
+In this list, you should see OpenSSH. We want to make sure we allow this first, otherwise, we will lock ourselves out of the system. If you’re running a web server like Nginx, then you might also see that here.
+
+To open this we’re going to run
+
+```mdx
+ufw allow OpenSSH
+```
+
+Now we know, we won’t lock ourselves out, we can start allowing the ports we want to keep open. For this, we just need to run the same command as before, but with the port we want to keep open. So if we have a Minecraft server on 25565, and we want to keep this active, we can run
+
+```mdx
+ufw allow 25565
+```
+
+To see all UFW commands, you can run the following
+
+```mdx
+ufw help
+```
+## Minecraft Proxies
+
+If you’re looking to lock down your server, so it can only be joined from your proxy, then you need to run this command
+
+```mdx
+ufw allow from <prxoy IP> to any port <your server port>
+```
+
+Running this means, only connections from your proxies IP address will be allowed to connect to this port. Blocking anyone trying to spoof your proxy from joining, as they’ll be from the incorrect IP.
+
+You’ll need to do this for all the servers you have connected to your proxy.
+
+## Enable The Firewall
+Now you’ve set up everything you need, you can enable the firewall with
+
+```mdx
+ufw allow
+```
+
+## Using Pterodactyl?
+If you’re using Pterodactyl, you might find this hasn’t worked. This is due to Pterodactyl reopening the port, to stop this we can do this
+
+Head to /etc/docker/daemon.json
+
+Then open the file in a FTP client, or with something like nano
+
+```mdx
+nano daemon.json
+```
+Here past the following text
+
+```mdx
+{
+"iptables":false
+}
+```
+
+Save and close, then run the following command
+
+```mdx
+sudo systemctl restart docker
+```
+This should stop Pterodactyl from reopening the ports.
