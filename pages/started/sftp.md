@@ -20,7 +20,7 @@ You can download FileZilla Here: https://filezilla-project.org/ You need to down
 Once that’s installed open the program, you should see a window like this
 ![FTB File Zilla](../../public/ftp-zilla.png)
 
-Now we have FileZilla, we now need to connect to the server. For this, we need to head to the panel. Under the advanced section, you’ll see SFTP Info. Should look like this:
+Now we have FileZilla, we now need to connect to the server. For this, we need to head to the panel. Under the advanced section, you’ll see SFTP & Import. Should look like this:
 ![FTB File Zilla](../../public/ftp-panel.png)
 
 We now need to copy this information into FileZilla. On the FileZilla client, you should see the following boxes.
