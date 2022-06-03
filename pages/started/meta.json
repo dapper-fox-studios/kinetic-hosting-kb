@@ -5,5 +5,8 @@
 	"import": "Import Tool",
 	"backups": "Making a Backup",
 	"sftp": "Using SFTP (FTP)",
-	"Gaming Game": "change-game.mdx"
+	"Change Game": "change-game",
+	"Split Tool": "split-tool",
+	"What is SWAP Memory": "swap",
+	"Sub Domains": "subdomain"
 }
