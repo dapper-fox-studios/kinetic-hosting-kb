@@ -13,7 +13,9 @@ Here all the modpacks are divided into categories. For example, if the modpack y
 
 
 Once you’ve selected a category, you’ll be given a page like this. Here you can see the version of the modpack, the version of Minecraft it’s for, and a little bit about the pack.
-To install, first shunt down the server. You can do this with the stop button at the top. Then press the green install button. That’s it! You’ve just installed the pack.
+To install, first shut down the server. You can do this with the stop button at the top. Then press the green install button. That’s it! You’ve just installed the pack.
+
+When installing some modpacks, you might some are marked as Panel Generated. This means there are no official server files for this modpack, so our panel has tried to make them. Due to changes in the Curse API, this feature might not download all the mods needed for the modpack. So use at your own risk
 
 ## Uploading
 If the modpack you want to use isn’t listed or is your own custom modpack, you’ll need to upload it yourself. If reading isn’t your thing, we’ve made a fancy video: https://www.youtube.com/watch?v=Wpabl5rOylo
