@@ -5,8 +5,10 @@
 	"import": "Import Tool",
 	"backups": "Making a Backup",
 	"sftp": "Using SFTP (FTP)",
-	"Change Game": "change-game",
-	"Split Tool": "split-tool",
-	"What is SWAP Memory": "swap",
-	"Sub Domains": "subdomain"
+	"change-game": "Change Game",
+	"split-tool": "Split Tool",
+	"swap": "What is SWAP Memory",
+	"subdomain": "Sub Domain",
+	"schedules": "Schedules",
+	"database": "Database"
 }
